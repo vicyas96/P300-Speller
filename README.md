@@ -43,4 +43,10 @@ This is an example of how your data may look like if you plot it. The red line r
 When you've acquired enough data, it's time to train the classifier using P300_Speller_Train\Classification.m script. Separate your dataset into training set and testing set and feed those to the LDA classifier. You'll have to do it manually, bacause this process varies for every individual. After the classifier has been trained, you'll see the accuracy that you've achieved during training/testing. Of course, the testing accuracy in much more important to worry about, because it shows the ability of your classifier to recognize the data it hasn't seen before.
 
 # Step 3: P300 Speller Online
-Coming soon...
+### Now you can jump to P300_Speller_Online folder
+
+Once you've gotten a good accuracy with P300_Speller_Train application, it's time to try to spell words in real time. All you have to do is to run P300_SpellerOnline.m script located in P300_Speller_Online folder(Put your trained LDA classifier in the this folder as well, see my example). 
+
+This application looks prety much the same as P300_Speller_Train, except it has 2 text boxes on the top. Left one is used to put the desired word to spell, just like before. Right one should remain untouched, because it will be used to display a letter that you were currently looking at (given the fact that you have an accurate classifier). 
+
+
